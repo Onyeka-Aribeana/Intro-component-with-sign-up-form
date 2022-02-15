@@ -16,7 +16,7 @@ function formValidation() {
       input.classList.add("failed");
       warning.textContent = `${label.textContent} cannot be empty`
     }
-    if (index === "3" && !regex.test(input.value)){
+    else if (index === "3" && !regex.test(input.value)){
       input.classList.add("failed");
       warning.textContent = "Looks like this is not an email";
     }
